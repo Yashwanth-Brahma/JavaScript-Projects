@@ -1,0 +1,17 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+button{
+    color:#f1f1f1 ;
+    background-color: #202020;
+    padding: 10px;
+}
+
+.bc{
+    background-color: #202020;
+    color: #f1f1f1;
+    padding: 5px;
+    margin:2% 25%;
+}
