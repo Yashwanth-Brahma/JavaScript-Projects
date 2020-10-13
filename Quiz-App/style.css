@@ -1,0 +1,46 @@
+body{
+    background-color: #b6b5b1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.qContainer{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+    width: 600px;
+    max-width: 100%;
+    margin-left: 28%;
+    text-align: left;
+}
+#btn{
+    background-color: #8e44ad;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 1.3rem;
+}
+#btn:hover{
+    background-color: #732d91;
+}
+
+#btn:focus{
+    background-color: #5e3370;
+    outline: none;
+}
+
+.qu{
+    padding-left: 25px;
+    font-weight: bolder;
+    padding-top: 15px;
+}
+
+.op{
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
