@@ -14,7 +14,7 @@ body{
     margin-left: 28%;
     text-align: left;
 }
-#btn{
+#btn,#load{
     background-color: #8e44ad;
     border: none;
     color: white;
@@ -24,6 +24,7 @@ body{
     font-size: 1.1rem;
     width: 100%;
     padding: 1.3rem;
+    
 }
 #btn:hover{
     background-color: #732d91;
@@ -34,7 +35,7 @@ body{
     outline: none;
 }
 
-.qu{
+#q1{
     padding-left: 25px;
     font-weight: bolder;
     padding-top: 15px;

@@ -33,14 +33,67 @@ const quizData = [
     },
 ];
 
+const btn = document.getElementById("btn");
+const a_text = document.getElementById("a_text");
+const b_text = document.getElementById("b_text");
+const c_text = document.getElementById("c_text");
+const d_text = document.getElementById("d_text");
+const que = document.getElementById("q");
+const ops = document.querySelectorAll(".op");
+let count = 0;
+let correctCount = 0;
 
-const btn=document.getElementById("btn");
-const q=document.getElementsByTagName("p");
-const ans=document.querySelectorAll(".ans");
-const op1=document.getElementById("op1");
-const op2=document.getElementById("op2");
-const op3=document.getElementById("op3");
-const op4=document.getElementById("op4");
-const q=document.getElementsByClassName("qContainer");
- 
-const currentQuiz
+if (count === 0) {
+    document.getElementById("qu1").innerHTML = "<button id=load>Load quiz</button>";
+
+}
+const load = document.getElementById("load");
+
+load.addEventListener("click", (e) => {
+    unCheck();
+    e.preventDefault();
+    document.getElementById("qu1").innerHTML = "";
+    document.getElementById("qu").hidden = false;
+    quizdisplay(count++);
+});
+
+btn.addEventListener("click", (e) => {
+    if (count < quizData.length) {
+        e.preventDefault();
+        let ans = getChecked();
+        if (ans == quizData[count - 1].correct) {
+            ++correctCount;
+        }
+        console.log(correctCount);
+        quizdisplay(count++);
+        unCheck();
+    } else {
+        e.preventDefault();
+        document.getElementById("qu").hidden = true;
+        document.getElementById("qu1").innerHTML = `<h3>Your score is : ${correctCount}<h3><br><button id=load >Load quiz</button>`;
+    }
+
+})
+
+function unCheck() {
+    ops.forEach((op) => {
+        op.checked = false;
+    });
+}
+function getChecked() {
+    let ans = undefined;
+    ops.forEach((op) => {
+        if (op.checked) {
+            ans = op.id;
+        }
+    });
+    return ans;
+}
+
+function quizdisplay(i) {
+    que.innerHTML = quizData[i].question;
+    a_text.innerHTML = quizData[i].a;
+    b_text.innerHTML = quizData[i].b;
+    c_text.innerHTML = quizData[i].c;
+    d_text.innerHTML = quizData[i].d;
+}

@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Quiz-App</h1>
-    <div class="qContainer">
-        <div class="qu">
-            <p>question</p>
-        </div>
-        <div class="op">
-            <input type="radio" name="option" id="a" class="ans">
-            <label id="op1" for=a>1</label><br>
-            <input type="radio" name="option" id="b" class="ans">
-            <label id="op2" for=b>1</label><br>
-            <input type="radio" name="option" id="c" class="ans">
-            <label id="op3" for=c>1</label><br>
-            <input type="radio" name="option" id="d" class="ans">
-            <label id="op4" for=d>1</label><br>
-        </div>
-        <div class="bt">
-            <button id=btn>Submit</button>
-        </div>
-    </div>
 
+<body>
+
+    <h1>Quiz App</h1>
+    <div class="qContainer">
+        <form>
+            <div id="qu1"></div>
+            <div id=qu hidden>
+                <div id="q1">
+                    <h3 id="q">question</h3>
+
+                    <input type="radio" id="a" name="ans" class="op"><label for="a" id=a_text>a</label><br>
+                    <input type="radio" id="b" name="ans" class="op"><label for="b" id=b_text>b</label> <br>
+                    <input type="radio" id="c" name="ans" class="op"><label for="c" id=c_text>c</label> <br>
+                    <input type="radio" id="d" name="ans" class="op"><label for="d" id=d_text>d</label><br>
+
+                </div>
+                <button id=btn>Submit</button>
+
+            </div>
+    </div>
+    </form>
     <script src="script.js"></script>
+
 </body>
+
 </html>
