@@ -47,6 +47,9 @@ const displaySearch=(data)=>{
     container.innerHTML+=`<div class="thumb">
                             <img src=${data1.show.image.medium} alt="${data1.show.name}" srcset=""></img>
                             <p>${data1.show.name} <span>${rating}</span></p>
+                            <div class="overview">
+                        ${data1.show.summary}
+                        </div>
                         </div> `;
     }
 }
