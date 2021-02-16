@@ -17,6 +17,7 @@ body{
     justify-content: end;
     padding: 0.5rem;
     width:auto;
+text-decoration:wavy;
 }
 
 .notes .tools button{
