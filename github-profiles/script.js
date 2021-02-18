@@ -57,4 +57,5 @@ form.addEventListener('submit',(e)=>{
     user1=searchUser.value;
     fetchUser();
 fetchRepos();   
+searchUser.value="";
 })
