@@ -14,7 +14,7 @@ const fetchweather=async (city1=city)=>{
 }
 
 const displayData=(data)=>{
-    display.innerHTML=`<h2><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> ${Math.floor(data.main.temp- 273.15)}°C 
+    display.innerHTML=`<h2>${data.name} <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> ${Math.floor(data.main.temp- 273.15)}°C 
     </h2>
     <small>${data.weather[0].main}</small>`
 }
